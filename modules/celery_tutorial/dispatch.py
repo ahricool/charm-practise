@@ -1,4 +1,4 @@
-from modules.celerytutorial.tasks import add
+from modules.celery_tutorial.tasks import add
 
 # result 是 AsyncResult 实例，表示worker的工作结果
 result=add.delay(4,4)

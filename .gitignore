@@ -1,2 +1,14 @@
-/venv/
-/.idea/
+
+# 以 / 开始标识根目录下
+/venv
+/.idea
+
+# 会匹配任意级目录和 **/test1 相同
+#test1
+
+test1/www.py
+
+# pytest
+# ** 会匹配任意个多级目录，可以用在任意位置
+# 因为 .pytest_cache 目录下有一个 .gitignore 文件把自身忽略掉，下面这句不写也不影响
+**/.pytest_cache

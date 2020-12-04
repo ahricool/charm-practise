@@ -1,17 +1,30 @@
+# class Displayer():
+#     def display(self, message):
+#         print(message)
+#
+#
+# class LoggerMixin():
+#     def log(self, message, filename='logfile.txt'):
+#         with open(filename, 'a') as fh:
+#             fh.write(message)
+#
+#     def display(self, message):
+#         super().display(message)
+#         self.log(message)
+#
+#
+# class MySubClass(LoggerMixin, Displayer):
+#     def log(self, message):
+#         super().log(message, filename='subclasslog.txt')
+# txt
+#
+# subclass = MySubClass()
+# subclass.display("This string will be shown and logged in subclasslog.txt")
 
-class A:
-    def hello(self):
-        print("hello1")
+a=10
 
-class BMixin:
-    def hello(self):
-        print("hello2")
+def sub(num):
+    num=num+1
 
-class C(A,BMixin):
-    s="word"
-
-
-if __name__=="__main__":
-    ins=C()
-    ins.hello()
-
+sub(a)
+print(a)

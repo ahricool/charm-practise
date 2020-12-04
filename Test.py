@@ -21,27 +21,27 @@ if __name__ == "__main__":
 
     js = [{
         "salesforce_id": 123,
-        "eamil": "1@appannie.com",
+        "eamil": "1@company.com",
         "activate": True
         },
         {
             "salesforce_id": 234,
-            "eamil": "2@appannie.com",
+            "eamil": "2@company.com",
             "activate": True
         },
         {
             "salesforce_id": 345,
-            "eamil": "3@appannie.com",
+            "eamil": "3@company.com",
             "activate": True
         },
         {
             "salesforce_id": 456,
-            "eamil": "4@appannie.com",
+            "eamil": "4@company.com",
             "activate": True
         },
         {
             "salesforce_id": 567,
-            "eamil": "5@appannie.com",
+            "eamil": "5@company.com",
             "activate": True
         }
 

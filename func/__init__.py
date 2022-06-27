@@ -39,9 +39,9 @@ class TestView(View):
         class UsernameForm(Form):
             username = StrFields()
 
-        uf=UsernameForm(request.args)
+        # uf=UsernameForm(request.args)
         print("------------username-----------")
-        print("this data "+str(uf.username.data))
+        # print("this data "+str(uf.username.data))
         return "Hello"
 
 app.add_url_rule("/",view_func=TestView.as_view("test"))

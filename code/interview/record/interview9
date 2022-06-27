@@ -1,0 +1,70 @@
+Appannie   data.ai
+
+移动app  广告的数据
+
+Intelligence  收集一些公开 或者 购买一些数据  分析 -》建模-》预测   收费
+Connect 收集客户自己的数据  (30+)  抓取-》分析-》展示  免费  我所在的
+Ascend libring 巴西的team  (400+)
+
+Google play  Appstore  Facebook amazon ... 报表数据 -> ETL -> 展示
+
+Connect -> Tech support 技术客服  bug
+
+# 专注后端 偏架构 偏数据
+# 微服务迁移和重构
+
+Django python2 aws 单体 -> Flask python3 MS
+
+0. 怎么迁移的
+逐步的迁移
+feature
+
+
+
+1. 如何拆分
+
+根据业务模型来拆分
+
+1. 高内聚低耦合
+2. 单一职责
+3. 闭包原则
+
+模块之间的<解耦>
+接口 functools 公共工具类 调用其他组的ms
+
+
+强依赖  弱依赖
+同步   异步
+http   queue kafka
+
+
+hystrix 熔断，降级，限流，隔离
+
+熔断
+阈值  正常的请求/总请求
+
+正常->熔断->半熔断->熔断
+
+http 返回 code 或者超时
+
+
+任务调度器
+
+分布式任务调度
+低延时
+
+  很多的 Task_launch_server ----> 哈希一致性 Mysql table 所有的 task_id, create_time,start_time,run_time,end_time,status
+  ---> Queue kafka topic ----> 很多 Worker 来消费来做
+  ----> Task 幂等性
+
+主 从 设计
+
+ETL --> 数仓 ---> hive spark flink
+
+
+
+
+
+
+
+

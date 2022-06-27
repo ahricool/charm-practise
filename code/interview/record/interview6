@@ -1,0 +1,76 @@
+// Microsoft Sonic 4面
+# 聊天程序 wechat 群
+
+
+# client 去中心化 udp
+
+
+
+# client -> （多对一）Server ->   topic（） 消息中心 (MQ Cluster)
+-》 地理位置
+->  Server 当前 QPS
+-> Server CPU 内存占用
+-> Server 所占用 Topic 数量
+-》 Server 当前的请求失败率
+-> Client  ---> API GATEWAY ELB --> server01 ---> topic() (MQ)
+
+https://
+
+http
+
+https://
+
+client key-pair  tcp
+
+
+
+
+
+{
+client_id
+group_id
+user_id
+content:"hello"
+}
+
+mysql
+群
+group_id,topic_id
+
+用户加群表
+user_id,user_id,group_id
+
+
+Client -> (多对一) Server02~05 -> Sub Topic-> MQ (id)
+
+{
+offset， int 类型+1
+
+}
+
+MQ 高可用
+
+
+IO 多路复用
+
+select poll epoll
+
+Client
+
+
+Topic
+
+异步形式
+
+Topic -> Client
+
+
+40
+
+C++ 偏难
+
+Python Golang ruby
+Node.js  vue + react
+
+
+

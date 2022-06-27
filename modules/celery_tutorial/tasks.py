@@ -1,4 +1,4 @@
-from celery import Celery
+from celery_tutorial import Celery
 
 # 第一个参数是 模块名
 # 第二个参数是 broker

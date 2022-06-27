@@ -1,0 +1,95 @@
+// Weibo 搜索2
+Django python2 -> Flask Python3 MS
+
+前端-> API GATEWAY -> MS(Python) -> DB Proxy (go) -> DB
+
+PG
+Mongo
+S3
+cassandra  libring
+
+snowflake 数据库
+
+
+Restful API
+
+AQL (LIKE GraphQL)
+
+挑战
+
+1. 根据业务模型划分
+
+2. 单一职责
+3. 闭包原则
+4. 高内聚低耦合
+
+Django  报表 -> function tools -> Analytics team -> User Teamm -> DB
+
+-> Function tools
+
+-> 调用别的组 MS
+
+feature MS
+
+Django MS Demo
+前端 url
+AQL
+
+Django python2/
+
+1.可扩展性
+2.可靠性
+3.可维护性
+4.
+
+分布式后端架构
+
+服务发现
+熔断
+降级
+ELB
+
+
+1.前端 （轮询）-> API Gateway -> (ELB)Signin service(python) Scraper->redis
+
+to B
+
+Linux 隔离 Linux 虚拟化 -> Docker
+
+Flask Airflow Celery
+
+Docker Kubernetes->Go
+
+
+
+PM()
+Leader()
+
+调研方案->技术选型
+
+# 大规模分布式后端任务框架
+Celery  ELB
+Kubernetes
+
+
+collections
+functools
+
+import six
+import typing
+
+import google_oauth
+
+
+
+1. 搜索的流量增长
+2. Bigdata
+3. 推荐 <<AI
+
+
+scrum
+
+年35w
+
+
+

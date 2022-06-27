@@ -1,0 +1,155 @@
+Django Python2 单体
+
+MS
+
+前端 -> API gateway -> Python ms -> GO Proxy ms -> DB
+postgresql SQL
+
+
+
+Django
+
+根据业务来拆分
+
+1. 高内聚低耦合
+2. 闭包原则
+3. 单一职责
+
+前端->nginx -> API gateway -> Python ms -> GO Proxy ms -> DB
+
+api gateway  ms
+
+Python ms  ->
+
+Google play apple store mazon ..
+
+session  avg
+apple store  session  sum
+
+unity3d admob ...
+
+代码乱
+不太微
+
+服务发现  dubboo  gRPC   AWS DNS  /ms1/v1/query
+                                /status/health
+
+配置中心          AWS
+gateway   Flask    单点故障
+
+ELB(nginx) ->gateway -> part-gateway ->MS
+负载均衡
+ECS nginx(http {upstream}) Kubernetes ->deployments->pod
+
+服务降级，熔断，隔离（高可用）
+to B
+sentinel hystrix
+
+日志系统
+ELK
+hadoop  Flink
+
+http
+header request-id kibana
+
+Redis
+持久化
+ops engineers
+
+击穿
+
+insert -> redis
+
+redis  id =-1
+
+bitmap  布隆
+
+雪崩
+
+redis
+
+redis 过期时间 3hour+buff
+
+限流器 -> Database
+
+
+Redis 高性能
+1. c语言编写
+2. 数据结构简单 内存存储
+3. 单线程模型
+4. IO多路复用
+
+
+MQ
+
+kafka  ->  aws SQS
+
+pub/sub
+
+topic
+
+partition
+
+offset+1
+
+
+
+
+
+Mysql   postgresql
+
+innodb  事务支持  锁  行锁  数据结构
+
+    事务，Insert update
+
+    用户账号  会员信息
+
+myisam  表锁
+
+    查询 innodb
+
+    用户视频的 元数据 metadata
+
+SQL 优化
+
+explain 索引
+
+索引
+经常查询的字段
+字段值比较多
+组合索引
+
+
+connect -> tech support
+
+libring
+
+appannie->data.ai
+
+
+weibo 2周 基础设施 crontab  -->  Flink
+
+后端  偏架构方面
+
+
+1. 大局观
+2. 求稳不求新
+3. 业务
+
+
+实际使用公司产品
+
+公司的tech 文档
+
+数据流
+
+维护 bug fixs
+
+看源码
+
+
+c 端 幸福里
+
+
+
+

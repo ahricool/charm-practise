@@ -1,0 +1,147 @@
+
+
+
+# Python2 Django
+Restful
+
+Aamzon AWS
+# 前端(react vue)-> API Gateway（Flask web）-> Python MS -> Go MS (Proxy) -> DB
+
+AD Redis 3days 7days
+
+100 缓存  缓存击穿
+
+1. 提前聚合好
+2. queue
+
+
+http
+X RPC
+AQL like Graphql
+
+负载均衡  AWS ELB
+
+高可用  hystrix
+to B
+
+报警 Sentry
+
+日志 ELK
+
+DB
+
+Postgresql
+Mongo
+S3
+Cassandra
+Snowflake
+
+
+迁移的问题  单体->MS
+
+1. 根据业务模型
+2. 高内聚低耦合
+3. 单一职责
+4. 闭包原则
+
+Django func
+Ms functools
+
+QA
+
+function
+
+
+Linux X - shell
+Mysql
+
+binlog  主从备份
+
+redolog  事务相关
+undolog
+
+分库分表
+
+hash(card_id)%5
+
+1. 线上业务需要
+
+    user Join hashed_table
+    2 个 Select
+
+2. BI 需要
+
+card_id
+
+数仓
+
+Mysql 索引
+
+1. 经常 Where 字段出现
+2. 数据是连续(age)的，非离散(Sex)
+3. 根据查询较多的SQL
+
+explain
+是否走索引
+
+Select * FROM XX Where xxx.
+
+Redis
+过期
+
+LRU
+惰性删除+定时脚本(随机)
+
+
+Redis
+
+lua
+select
+Set
+
+
+delete
+
+
+有Redis
+
+
+hystrix
+熔断
+
+正常 -> 熔断 -> 半熔断 -> 正常
+        熔断 <-
+
+
+降级
+
+微博
+
+限流
+
+DB  8000qps
+
+分布式 ID
+
+1. UUID
+2. DB 自增ID  Step 5
+    1 6 11
+    2 7 12
+3. KGS ID int 存储到DB
+
+接口的幂等性
+    唯一ID：user_id_stamp
+
+
+
+
+
+
+
+
+
+
+
+
+
+

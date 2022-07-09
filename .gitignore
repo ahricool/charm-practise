@@ -2,10 +2,10 @@
 # 以 / 开始标识根目录下
 /venv
 /.idea
+/__pycache__
 
 # 会匹配任意级目录和 **/test1 相同
-#test1
-
+test1
 test1/www.py
 
 # pytest

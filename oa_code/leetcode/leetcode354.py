@@ -12,5 +12,6 @@ class Solution:
                 if envelopes[j][0] < envelopes[i][0] and envelopes[j][1] < envelopes[i][1]:
                     dp[i] = max(dp[i], dp[j] + 1)
 
-        bisect.bisect_left()
+        # 上面这么写是完全正确的，但是因为dp的二重循环的原因，会超时
+
         return max(dp)

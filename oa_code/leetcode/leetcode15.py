@@ -4,6 +4,7 @@ class Solution:
         nums = sorted(nums)
         res = []
         for first in range(len(nums) - 2):
+            # 对于连续的数组 直接跳过 不对比了
             if first>0 and nums[first]==nums[first-1]:
                 continue
 

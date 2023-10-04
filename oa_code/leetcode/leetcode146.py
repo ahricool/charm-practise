@@ -4,9 +4,9 @@
 class LRUCache:
 
     def __init__(self, capacity: int):
-        self.cache = {}
+        self.cache = {}   # 用于存储数据
         self.size = capacity
-        self.timeout = []
+        self.timeout = []   # 用于存储 key 的访问顺序
 
     def get(self, key: int) -> int:
         if key in self.cache:
@@ -19,7 +19,7 @@ class LRUCache:
     def put(self, key: int, value: int) -> None:
         if key in self.cache:
             self.cache[key] = value
-            self.timeout.remove(key)
+            self.timeout.remove(key)   # 这个操作不是o(1)的操作
             self.timeout.append(key)
         else:
             if len(self.cache) >= self.size:
@@ -30,6 +30,10 @@ class LRUCache:
             else:
                 self.timeout.append(key)
                 self.cache[key] = value
+
+# 根据这个题目提出的要求，要设计好数据结构
+# key存在缓存中，返回关键字。o(1) 操作应该有一个hashmap 的结构。
+# 超过容量自动逐出关键字，o(1) 应该可以快速的访问数据结构的开头和末尾，List 或者双向链表。
 
 
 # Your LRUCache object will be instantiated and called as such:

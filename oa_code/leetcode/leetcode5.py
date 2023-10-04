@@ -13,8 +13,10 @@ class Solution:
                 check(i - 1, j + 1, current)
 
         for i in range(len(s)):
+            # 回文字符串有两种，一种是bab这种奇数个字符构成
             cur1 = [s[i], ]
             check(i - 1, i + 1, cur1)
+            # 一种是aa这种偶数个字符串构成
             cur2 = []
             check(i, i + 1, cur2)
 

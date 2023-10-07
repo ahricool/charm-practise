@@ -1,2 +1,2 @@
-tailscaled --tun=userspace-networking --socks5-server=localhost:1055 --outbound-http-proxy-listen=localhost:1055 
+tailscaled --tun=userspace-networking --socks5-server=localhost:1055 --outbound-http-proxy-listen=localhost:1055  &
 tailscale up --exit-node=100.74.16.82 --exit-node-allow-lan-access

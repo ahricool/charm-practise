@@ -22,8 +22,41 @@ class Solution:
         return slide_max
 
 
-#  优先队列
+#  单调栈
+#  Python 中真正的链表的实现是 collections.deque()
 
+import collections
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        n=len(nums)
+        s=collections.deque()
+        ans=[]
+        for idx in range(len(nums)):
+            while len(s)!=0 and s[-1]<nums[idx]:
+                s.pop()
+            s.append(nums[idx])
+
+            if idx>=k-1:
+                if idx>=k and nums[idx-k]==s[0]:
+                    s.popleft
+                ans.append(s[0])  
+        return ans
+
+# 这种方法也是正确的，但是在提交的时候回超时，因为Python List 的底层实现是 可变Array
+# 在数组长度不断变化的情况在，性能会变得很差。
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        s=[]
+        ans=[]
+        for idx in range(len(nums)):
+            while len(s)!=0 and s[-1]<nums[idx]:
+                s.pop(-1)
+            s.append(nums[idx])
+
+            if idx>=k-1:
+                if idx>=k and nums[idx-k]==s[0]:
+                    s.pop(0)
+                ans.append(s[0])  
+        return ans
+
+            
+

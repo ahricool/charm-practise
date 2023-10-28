@@ -1,3 +1,5 @@
+# 将0元素移到一边，并不改变其他元素的相对顺序。
+
 def sort(l):
     first=second=len(l)-1
     while first>=0 and l[first]!=0:

@@ -1,4 +1,4 @@
-
+# Microsoft 一面 考了一个冒泡排序  没有写出来
 
 # o冒泡  o n2
 
@@ -11,7 +11,6 @@
 # 桶排序  logn 需要其他空间辅助
 import math
 
-#
 def popsort(l):
 
     while True:

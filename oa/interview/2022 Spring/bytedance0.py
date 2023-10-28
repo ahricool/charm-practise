@@ -29,13 +29,9 @@ print(max_len([1,0,1],1))
 print(max_len([0,1,0,1],2))
 print(max_len([0,0,1,1,0,0,1,1,1,1,1,1,1],2))
 
-""""
-输入数组 只含 0,1
 
-int 数组里面的0 替换1 替换次数
 
-返回整数  最长的连续1的长度
-"""
+
 
 # a,b,c,d,e
 # [1,2,3,4,5]
@@ -58,11 +54,5 @@ def sub_count(nums):
     return sum(dp)
 
 print(sub_count([1,2,3,4,5,0,1,2,3,4,5]))
-
-
-from collections import deque
-
-deque.inse
-
 
 

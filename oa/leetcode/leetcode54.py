@@ -1,7 +1,8 @@
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        n, m = len(matrix), len(matrix[0])
-        tags = [[0 for _ in range(m)] for _ in range(n)]
+
+
+
 
         x, y = 0, 0
         res = []

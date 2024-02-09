@@ -6,7 +6,11 @@
 #         self.right = right
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
-        ptr=root
+        dummy=TreeNode(0,root,None)
 
-        while ptr:
+        def find(root,key):
+            if root.val==key:
+                find(root,key)
+
+
             

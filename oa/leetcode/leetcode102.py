@@ -27,3 +27,19 @@ class Solution:
 
 
 
+class Solution:
+    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        stack=[]
+        ans=[]
+        def lfs(root):
+            stack.append(root)
+            while stack:
+                ptr=stack.pop(0)
+                ans.append(ptr.ans)
+                if ptr.left:
+                    stack.append(ptr.left)
+                if ptr.right:
+                    stack.append(ptr.right)
+
+        lfs(root)
+        return ans

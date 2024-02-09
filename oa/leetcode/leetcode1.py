@@ -7,3 +7,5 @@ class Solution:
                return [idx,d[expect]]
            else:
                d.update({nums[idx]:idx})
+
+        return 

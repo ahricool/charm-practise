@@ -23,4 +23,9 @@ class Solution:
             find_other(row)
         return res
 
-Solution().permute([1,2,3])
+
+
+
+
+
+

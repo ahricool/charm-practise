@@ -56,6 +56,32 @@ class Solution:
         return False
 
 
+# 自己写的第二版
+
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        n=len(board)
+        m=len(board[0])
+
+        def dfs(x,y,idx):
+            if idx>=len(word):
+                return True
+            if n>x>=0 and m>y>=0 and board[x][y]==word[idx]:
+                    tmp=board[x][y]
+                    board[x][y]=None
+                    for x_next,y_next in [(x+1,y),(x,y+1),(x-1,y),(x,y-1)]:
+                        if dfs(x_next,y_next,idx+1):
+                            return True
+                    board[x][y]=tmp
+                    return False
+        
+        for x in range(n):
+            for y in range(m):
+                if dfs(x,y,0):
+                    return True
+        return False
+
+
 
 
 

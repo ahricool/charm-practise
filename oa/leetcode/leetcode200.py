@@ -4,7 +4,7 @@ class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         n=len(grid)
         m=len(grid[0])
-        tags=[[0 for _ in range(m)] for _ in range(n)]
+        tags=[[0 for _ in range(m)] for _ in range(n)]   # 额外的空间是没有必要的，在原空间标记即可。
         count=0
 
         def mark(i,j):

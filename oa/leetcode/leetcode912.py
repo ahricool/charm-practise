@@ -1,7 +1,8 @@
 import random
 
 
-#  m
+
+# 快速排序
 
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -25,6 +26,7 @@ class Solution:
 
         self.quickSort(nums, l, idx - 1)
         self.quickSort(nums, idx + 1, r)
+
 
 
 # 冒泡排序

@@ -1,19 +1,22 @@
 class Solution:
     def myAtoi(self, s: str) -> int:
         s = s.strip()
-        negative = False if s[0].isdigit() or s[0]=="+" else False
+        negative = False
+        if not s[0].isdigit:
+            if s[0] in ["+","-"]:
+                if s[0]=="-":
+                    negative=True 
+                s=s[1:]
+            else:
+                return 0
+            
         value = 0
         for c in s:
-            if c =="+" or c=="-":
-                negative = True
-            elif c == "+":
-                pass
-            else:
-                try:
-                    num = int(c)
-                except:
-                    break
-                value = value * 10 + num
+            try:
+                num = int(c)
+            except:
+                break
+            value = value * 10 + num
         if negative:
             value = -value
 

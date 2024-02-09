@@ -35,6 +35,50 @@ class Solution:
         return dummy.next
 
 
+# 最清晰的代码，请记住
+class Solution:
+    def reverseKGroup(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+
+        dummy=ListNode(0,head)
+        pre=cur=dummy
+
+        counter=0
+        while cur.next is not None:
+            cur=cur.next
+            counter+=1
+
+            if counter%k==0:
+                nxt=cur.next
+                cur.next=None
+
+                head,rear=self.reverse(pre.next)
+
+                pre.next=head
+                rear.next=nxt
+
+                pre=cur=rear
+
+        return dummy.next
+
+
+
+
+
+    def reverse(self,head):
+        pre=None
+        cur=head
+        while cur !=None:
+            nxt=cur.next
+            cur.next=pre
+            pre=cur
+            cur=nxt
+
+        return pre,head
+            
+
+
+
+
 
 
 

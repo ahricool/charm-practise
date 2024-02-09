@@ -6,17 +6,24 @@
 #         self.right = right
 class Solution:
     def isCompleteTree(self, root: TreeNode) -> bool:
-        max_deep=0
-        res=True
-        def dfs(ptr,deep):
-            if ptr is None:
-                max_deep=
 
-            dfs(ptr.left,deep+1)
-            dfs(ptr.right,deep+1)
+        is_end=False
 
-        dfs(root,0)
-        return res
+        queue=[root]
+        while queue:
+
+            ptr=queue.pop(0)
+            
+            if ptr !=None:
+                if is_end:
+                    return False
+
+                queue.append(ptr.left)
+                queue.append(ptr.right)
+            else:
+                is_end=True
+
+        return True
 
 
 

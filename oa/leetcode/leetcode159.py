@@ -4,7 +4,7 @@ import heapq
 # 堆的用法
 # heapq.heapify(x) 将x变成堆，x对象是啥结果还是啥，就是对其中的元素进行了一次堆排序
 # heapq.heappush(x,i)  将i放入堆中
-# heapq.heappop(x) 将x中最小的元素弹出  所以说 heapq 是小根堆  用大根堆要转负
+# heapq.heappop(x) 将堆顶元素弹出  和一般的排序算法一样  heapq 也是从小到大进行排序的  堆顶是最小的元素
 # heapq.heapreplace(x,i) 将x中最小元素弹出，并且将i 放入
 
 class Solution:

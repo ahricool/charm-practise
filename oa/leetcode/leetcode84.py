@@ -1,5 +1,8 @@
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:
 
-        dp=[[0,0] for _ in range(len(heights))]
+        stack=[]
+        for i in range(len(heights)):
+            stack.append(len(heights))
+            
         
